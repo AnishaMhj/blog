@@ -1,0 +1,79 @@
+/*  
+    Created by Anisha Maharjan
+    Email: anishamhrzn47@gmail.com
+    Date: 26 May 2021
+=======================================*/
+
+
+/* FONT STYLES
+=======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Quicksand";
+    color: #333;
+}
+
+:root{
+    --primary-pink: #f1356d;
+    --primary-light-grey: #f2f2f2;
+    --shadow-light-grey: #fafafa;
+    --box-shadow-black: #fafafa;
+}
+
+/* NAVBAR
+=======================================*/
+
+.navbar{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--primary-light-grey);
+
+    h1{
+        color: var(--primary-pink);
+    }
+
+    .links{
+        margin-left: auto;
+    }
+
+    a{
+        margin-left: 16px;
+        text-decoration: none;
+        padding: 6px;
+
+        &:hover{
+            color: var(--primary-pink);
+        }
+    }
+}
+
+/* BLOG CONTENT
+=======================================*/
+
+.content{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.blog-preview{
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid var(--shadow-light-grey);
+
+    &:hover{
+        box-shadow: 1px 3px 5px var(--box-shadow-black);
+    }
+
+    h2{
+        font-size: 20px;
+        color: var(--primary-pink);
+        margin-bottom: 8px;;
+    }
+}

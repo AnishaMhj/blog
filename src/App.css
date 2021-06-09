@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+/*  
+    Created by Anisha Maharjan
+    Email: anishamhrzn47@gmail.com
+    Date: 26 May 2021
+=======================================*/
+/* FONT STYLES
+=======================================*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-pink: #f1356d;
+  --primary-light-grey: #f2f2f2;
+  --shadow-light-grey: #fafafa;
+  --box-shadow-black: #fafafa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAVBAR
+=======================================*/
+.navbar {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--primary-light-grey);
 }
 
-.App-link {
-  color: #61dafb;
+.navbar h1 {
+  color: var(--primary-pink);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .links {
+  margin-left: auto;
 }
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: var(--primary-pink);
+}
+
+/* BLOG CONTENT
+=======================================*/
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid var(--shadow-light-grey);
+}
+
+.blog-preview:hover {
+  -webkit-box-shadow: 1px 3px 5px var(--box-shadow-black);
+          box-shadow: 1px 3px 5px var(--box-shadow-black);
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: var(--primary-pink);
+  margin-bottom: 8px;
+}
+/*# sourceMappingURL=App.css.map */
