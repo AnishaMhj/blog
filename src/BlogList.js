@@ -1,6 +1,6 @@
 //stateless functional component
 
-const BlogList = ({blogs, title}) => {
+const BlogList = ({blogs, title, handleDelete}) => {
 
 // or longer method as:
     // const BlogList = (props) => {
@@ -15,6 +15,7 @@ const BlogList = ({blogs, title}) => {
                 <div className="blog-preview" key={blog.id} >
                     <h2>{ blog.title }</h2>
                     <p>Written by { blog.author } </p>
+                    <button onClick={() => handleDelete(blog.id)}>Delete</button>
                 </div>
             ))}
         </div>
