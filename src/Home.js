@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
 
 
@@ -11,12 +11,22 @@ const Home = () => {
         { title: 'Web dev top tips', body: 'loerm ipsum...', author: 'mario', id: 3 }
     ]);
 
+
+    const [name, setName] = useState('mario');
+
     //define here to interact with data directly and pass as props
     const handleDelete = (id) => {
         //return new filtered array
         const newBlogs = blogs.filter(blog => blog.id !== id);
         setBlogs(newBlogs);
     }
+
+    //useEffect fires a function on every render
+    //when used with the state can trigger continuous loop
+    useEffect(() => {
+        console.log('use effect ran');
+        console.log(name);
+    }, [name]);
 
     return ( 
         <div className="home">
@@ -25,7 +35,8 @@ const Home = () => {
             {/* Reusing components */}
             {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title="Mario's Blogs!" /> */}
 
-
+            <button onClick= {() => setName('Luigi')}>Change Name</button>  
+    <p>{name}</p>
         </div>
      );
 }
