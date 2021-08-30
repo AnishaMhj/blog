@@ -48,3 +48,24 @@ const Home = () => {
 }
  
 export default Home;
+
+{
+
+//learning use effects - put in home.js
+const [name, setName] = useState('mario');
+
+    //useEffect fires a function on every render
+    //when used with the state can trigger continuous loop
+    //runs the value when the state dependent to changes
+    useEffect(() => {
+        console.log('use effect ran');
+        console.log(name);
+    }, [name]);
+    
+
+            {/* Reusing components */}
+            {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title="Mario's Blogs!" /> */}
+<button onClick= {() => setName('Luigi')}>Change Name</button>
+<p>{name}</p>
+}
+

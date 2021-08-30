@@ -12,7 +12,6 @@ const Home = () => {
     ]);
 
 
-    const [name, setName] = useState('mario');
 
     //define here to interact with data directly and pass as props
     const handleDelete = (id) => {
@@ -21,22 +20,15 @@ const Home = () => {
         setBlogs(newBlogs);
     }
 
-    //useEffect fires a function on every render
-    //when used with the state can trigger continuous loop
+    //useEffect is used to fetch data
     useEffect(() => {
         console.log('use effect ran');
-        console.log(name);
-    }, [name]);
+    
+    }, []);
 
     return ( 
         <div className="home">
             <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
-        
-            {/* Reusing components */}
-            {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title="Mario's Blogs!" /> */}
-
-            <button onClick= {() => setName('Luigi')}>Change Name</button>  
-    <p>{name}</p>
         </div>
      );
 }
