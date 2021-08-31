@@ -5,30 +5,38 @@ import BlogList from './BlogList';
 
 const Home = () => {
 
-    const [blogs, setBlogs] = useState([
-        { title: 'My new website', body: 'loerm ipsum...', author: 'anisha', id: 1 },
-        { title: 'Welcome party!', body: 'loerm ipsum...', author: 'abhishekh', id: 2 },
-        { title: 'Web dev top tips', body: 'loerm ipsum...', author: 'mario', id: 3 }
-    ]);
-
+    const [blogs, setBlogs] = useState(null);
+    const [isPending, ssetIsPending] = useState(true);
 
 
     //define here to interact with data directly and pass as props
-    const handleDelete = (id) => {
-        //return new filtered array
-        const newBlogs = blogs.filter(blog => blog.id !== id);
-        setBlogs(newBlogs);
-    }
+    // const handleDelete = (id) => {
+    //     //return new filtered array
+    //     const newBlogs = blogs.filter(blog => blog.id !== id);
+    //     setBlogs(newBlogs);
+    // }
 
     //useEffect is used to fetch data
+    //runs when the component first renders, cannot make async()
     useEffect(() => {
-        console.log('use effect ran');
-    
+        setTimeout(() => {
+            fetch('http://localhost:8000/blogs')
+            .then(res => {
+                return res.json()
+            })
+            .then((data) => {
+                // console.log(data);
+                setBlogs(data);
+                ssetIsPending(false);
+            });
+        }, 1000);
     }, []);
 
     return ( 
         <div className="home">
-            <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete} />
+            {/* conditional templating  */}
+            { isPending && <div>Loading...</div> }
+            {blogs && <BlogList blogs={blogs} title="All Blogs!" />}
         </div>
      );
 }
