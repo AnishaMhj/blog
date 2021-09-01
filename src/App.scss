@@ -68,12 +68,16 @@
     border-bottom: 1px solid var(--shadow-light-grey);
 
     &:hover{
-        box-shadow: 1px 3px 5px var(--box-shadow-black);
+        box-shadow: 1px 3px 5px gitvar(--box-shadow-black);
     }
 
     h2{
         font-size: 20px;
         color: var(--primary-pink);
-        margin-bottom: 8px;;
+        margin-bottom: 8px;
+    }
+
+    a{
+        text-decoration: none;
     }
 }
