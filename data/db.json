@@ -1,16 +1,52 @@
 {
-    "blogs": [
-      {
-        "title": "Staying Calm When You're Stressed",
-        "body": "acddd",
-        "author": "Anisha",
-        "id": 1
-      },
-      {
-        "title": "Importance of Transferrable Skills in a Workplace ",
-        "body": "anisha",
-        "author": "Anisha",
-        "id": 2
-      }
-    ]
+  "blogs": [
+    {
+      "title": "Staying Calm When You're Stressed",
+      "body": "acddd",
+      "author": "Anisha",
+      "id": 1
+    },
+    {
+      "title": "Importance of Transferrable Skills in a Workplace ",
+      "body": "anisha",
+      "author": "Anisha",
+      "id": 2
+    },
+    {
+      "title": "Making life happier",
+      "body": "making life happier",
+      "author": "Yoshi",
+      "id": 3
+    },
+    {
+      "title": "Making life Happier",
+      "body": "Making life happier with food.",
+      "author": "Anisha",
+      "id": 4
+    },
+    {
+      "title": "test blog",
+      "body": "this blog is a test.",
+      "author": "Anisha",
+      "id": 5
+    },
+    {
+      "title": "test blog",
+      "body": "this blog is a test.",
+      "author": "Anisha",
+      "id": 6
+    },
+    {
+      "title": "gdfg",
+      "body": "sdfgfsdg",
+      "author": "Yoshi",
+      "id": 7
+    },
+    {
+      "title": "test 2",
+      "body": "this is a test 2",
+      "author": "Yoshi",
+      "id": 8
+    }
+  ]
 }
