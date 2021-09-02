@@ -67,13 +67,29 @@
 }
 
 .blog-preview:hover {
-  -webkit-box-shadow: 1px 3px 5px var(--box-shadow-black);
-          box-shadow: 1px 3px 5px var(--box-shadow-black);
+  -webkit-box-shadow: 1px 3px 5px gitvar(--box-shadow-black);
+          box-shadow: 1px 3px 5px gitvar(--box-shadow-black);
 }
 
 .blog-preview h2 {
   font-size: 20px;
   color: var(--primary-pink);
   margin-bottom: 8px;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+/* BLOG DETAILS PAGE
+=======================================*/
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.blog-details div {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=App.css.map */

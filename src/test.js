@@ -69,3 +69,8 @@ const [name, setName] = useState('mario');
 <p>{name}</p>
 }
 
+// or longer method as:
+    // const BlogList = (props) => {
+    // const blogs = props.blogs;
+    // const title = props.title;
+    // console.log(props, blogs);   
