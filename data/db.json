@@ -47,6 +47,24 @@
       "body": "this is a test 2",
       "author": "Yoshi",
       "id": 8
+    },
+    {
+      "title": "asd",
+      "body": "asds",
+      "author": "Yoshi",
+      "id": 9
+    },
+    {
+      "title": "asd",
+      "body": "asd",
+      "author": "Anisha",
+      "id": 10
+    },
+    {
+      "title": "hello ninjas",
+      "body": "this is a test blog",
+      "author": "Yoshi",
+      "id": 11
     }
   ]
 }
