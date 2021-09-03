@@ -13,12 +13,6 @@
       "id": 2
     },
     {
-      "title": "Making life happier",
-      "body": "making life happier",
-      "author": "Yoshi",
-      "id": 3
-    },
-    {
       "title": "Making life Happier",
       "body": "Making life happier with food.",
       "author": "Anisha",
@@ -29,12 +23,6 @@
       "body": "this blog is a test.",
       "author": "Anisha",
       "id": 5
-    },
-    {
-      "title": "test blog",
-      "body": "this blog is a test.",
-      "author": "Anisha",
-      "id": 6
     },
     {
       "title": "gdfg",
@@ -49,22 +37,16 @@
       "id": 8
     },
     {
-      "title": "asd",
-      "body": "asds",
-      "author": "Yoshi",
-      "id": 9
-    },
-    {
-      "title": "asd",
-      "body": "asd",
-      "author": "Anisha",
-      "id": 10
-    },
-    {
       "title": "hello ninjas",
       "body": "this is a test blog",
       "author": "Yoshi",
       "id": 11
+    },
+    {
+      "title": "Testing ",
+      "body": "this is a testing blog\n",
+      "author": "Anisha",
+      "id": 12
     }
   ]
 }
